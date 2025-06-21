@@ -149,4 +149,4 @@ El autor NO se hace responsable por el uso malicioso o ilegal de esta herramient
 El uso indebido puede resultar en consecuencias legales.  
 USO BAJO TU PROPIO RIESGO.
 
-============================================================
+================
