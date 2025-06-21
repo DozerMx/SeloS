@@ -1,112 +1,152 @@
-==============================================================
-               SeloS DoS Toolkit v1.0 - by DozerMx
-==============================================================
+============================================================
+                 🚀 SeloS DoS Toolkit v1.0 - by DozerMx
+============================================================
 
-⚠️ USO LEGAL:
-Este script está diseñado EXCLUSIVAMENTE con fines educativos y pruebas en entornos controlados.
-NO LO UTILICES contra sistemas sin autorización expresa. Podrías incurrir en delitos informáticos.
+![Python](https://img.shields.io/badge/python-3.8+-blue?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Status](https://img.shields.io/badge/status-educational-lightgrey?style=flat-square)
 
-----------------------------------------
-🧠 DESCRIPCIÓN
-----------------------------------------
-SeloS es una herramienta de tráfico HTTP masivo construida con Python y aiohttp.
-Usa tareas asíncronas para lanzar miles de requests GET con headers aleatorios, útil para:
-- Pruebas de stress
-- Análisis de capacidad de respuesta
-- Verificación de WAFs
+> Herramienta educativa para simular tráfico HTTP masivo de forma asíncrona.
 
-Incluye rotación de rutas, useragents y cabeceras para evadir detección básica.
-
-----------------------------------------
-💻 INSTALACIÓN EN LINUX
-----------------------------------------
-
-1. Actualiza el sistema:
-   sudo apt update && sudo apt upgrade -y
-
-2. Instala Python y pip:
-   sudo apt install python3 python3-pip -y
-
-3. (Opcional) Crea un entorno virtual:
-   python3 -m venv venv
-   source venv/bin/activate
-
-4. Clona o descarga el script:
-   git clone https://github.com/DozerMx/SeloS.git
-   cd SeloS
-
-5. Instala los requisitos:
-   pip install -r requirements.txt
-
-6. Ejecuta el script:
-   python3 SeloS.py
-
-----------------------------------------
-📱 INSTALACIÓN EN TERMUX (Android)
-----------------------------------------
-
-1. Actualiza paquetes:
-   pkg update && pkg upgrade -y
-
-2. Instala Python y Git:
-   pkg install python git -y
-
-3. Clona el repositorio:
-   git clone https://github.com/DozerMx/SeloS.git
-   cd SeloS
-
-4. Instala dependencias:
-   pip install -r requirements.txt
-
-5. Ejecuta el script:
-   python SeloS.py
-
-----------------------------------------
-🧰 USO
-----------------------------------------
-
-Al ejecutar, te pedirá:
-
-Target URL >> example.com
-Workers (100-10000) >> 1500
-
-- URL puede tener o no el http/https.
-- Workers: número de tareas asíncronas (recomendado 500 a 2000 según tu CPU)
-
-Se mostrará el código de estado HTTP de cada request para medir respuesta del servidor.
-
-----------------------------------------
-📦 REQUISITOS (requirements.txt)
-----------------------------------------
-
-aiohttp==3.9.5
-pyfiglet==1.0.2
-
-Python >= 3.8 (recomendado 3.11+)
-
-----------------------------------------
-📌 CONSEJOS TÉCNICOS
-----------------------------------------
-
-- Ideal para analizar carga y stress en tu servidor.
-- No se recomienda usar más de 2000 workers si tu conexión o dispositivo es débil.
-- Compatible con Termux, WSL, Linux y cualquier sistema con Python 3.
-
-----------------------------------------
-📩 AUTOR Y CONTACTO
+------------------------------------------------------------
+📋 Tabla de Contenido
 ------------------------------------------------------------
 
-Autor: DozerMx
-Versión: 1.0
+1. Descripción
+2. Requisitos
+3. Instalación
+    - Linux
+    - Termux
+4. Uso
+5. Funcionamiento Interno
+6. Capturas
+7. Advertencia Legal
+8. Autor
+9. Disclaimer
 
-¿Mejoras o sugerencias? Abre un issue o crea un pull request.
+------------------------------------------------------------
+📌 DESCRIPCIÓN
+------------------------------------------------------------
+
+SeloS DoS Toolkit es un script Python para pruebas de stress HTTP, que envía peticiones masivas asíncronas usando aiohttp. Simula tráfico realista y variado con rotación de headers y rutas, ideal para pruebas de carga, pentesting local o análisis de WAFs.
+
+------------------------------------------------------------
+🧰 REQUISITOS
+------------------------------------------------------------
+
+- Python 3.8 o superior (recomendado 3.11+)
+- pip
+- Librerías:
+    - aiohttp==3.9.5
+    - pyfiglet==1.0.2
+
+Archivo requirements.txt:
+
+aiohttp==3.9.5  
+pyfiglet==1.0.2
+
+------------------------------------------------------------
+⚙️ INSTALACIÓN
+------------------------------------------------------------
+
+🐧 LINUX
+
+1. Instalar dependencias:
+
+sudo apt update && sudo apt install python3 python3-pip git -y
+
+2. Clonar el repositorio:
+
+git clone https://github.com/tuusuario/selos-dos-toolkit.git  
+cd selos-dos-toolkit
+
+3. Instalar requisitos:
+
+pip install -r requirements.txt
+
+4. Ejecutar el script:
+
+python3 selos.py
+
+📱 TERMUX
+
+pkg update && pkg upgrade -y  
+pkg install python git -y  
+git clone https://github.com/tuusuario/selos-dos-toolkit.git  
+cd selos-dos-toolkit  
+pip install -r requirements.txt  
+python selos.py
+
+------------------------------------------------------------
+🚀 USO
+------------------------------------------------------------
+
+Ejecutar:
+
+python3 selos.py
+
+El script solicitará:
+
+Target URL >> http://example.com  
+Workers (100-10000) >> 1000
+
+El ataque comenzará y mostrará el estado de las respuestas HTTP.
+
+Ejemplo de salida:
+
+Starting attack with 1000 workers against:  
+http://example.com  
+ATTACK IN PROGRESS...  
+Press Ctrl+C to stop
+
+------------------------------------------------------------
+🔬 FUNCIONAMIENTO INTERNO
+------------------------------------------------------------
+
+- Usa asyncio para tareas concurrentes.
+- ClientSession de aiohttp para lanzar múltiples requests.
+- Headers dinámicos (User-Agent, Referer, Language).
+- Rutas aleatorias tipo `/api`, `/login`, `/user/123`, etc.
+- Manejo de concurrencia con asyncio.Semaphore.
+- Salida visual con colores ANSI y figlet.
+
+------------------------------------------------------------
+🖼️ CAPTURAS (coloca en /assets/)
+------------------------------------------------------------
+
+- Banner inicial → assets/banner.png  
+- Diagrama HTTP Flood → assets/http_flood.png  
+- Capas OSI → assets/layers_attack.png  
+
+Markdown sugerido:
+
+![Banner](assets/banner.png)  
+![HTTP Flood](assets/http_flood.png)  
+![Capas de ataque](assets/layers_attack.png)
+
+------------------------------------------------------------
+⚖️ ADVERTENCIA LEGAL
+------------------------------------------------------------
+
+> ⚠️ Este script es solo para uso educativo y pruebas controladas.
+> Ejecutarlo contra sistemas sin consentimiento es ILEGAL.
+> Úsalo únicamente en servidores propios o con permiso explícito.
+
+------------------------------------------------------------
+👤 AUTOR
+------------------------------------------------------------
+
+- Nombre: DozerMx  
+- Contacto: Telegram o GitHub  
+- Versión: 1.0  
+- Licencia: MIT  
 
 ------------------------------------------------------------
 🛡️ DISCLAIMER
 ------------------------------------------------------------
 
-El uso de esta herramienta queda bajo TU responsabilidad.
-El autor no se hace responsable del uso indebido o malicioso del código.
-Usa esto con ética, inteligencia y respeto.
+El autor NO se hace responsable por el uso malicioso o ilegal de esta herramienta.  
+El uso indebido puede resultar en consecuencias legales.  
+USO BAJO TU PROPIO RIESGO.
 
 ============================================================
