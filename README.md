@@ -58,8 +58,8 @@ sudo apt update && sudo apt install python3 python3-pip git -y
 
 2. Clonar el repositorio:
 
-git clone https://github.com/tuusuario/selos-dos-toolkit.git  
-cd selos-dos-toolkit
+git clone https://github.com/DozerMx/SeloS.git  
+cd SeloS
 
 3. Instalar requisitos:
 
@@ -67,16 +67,16 @@ pip install -r requirements.txt
 
 4. Ejecutar el script:
 
-python3 selos.py
+python3 SeloS.py
 
 📱 TERMUX
 
 pkg update && pkg upgrade -y  
 pkg install python git -y  
-git clone https://github.com/tuusuario/selos-dos-toolkit.git  
-cd selos-dos-toolkit  
+git clone https://github.com/DozerMx/SeloS.git  
+cd SeloS
 pip install -r requirements.txt  
-python selos.py
+python SeloS.py
 
 ------------------------------------------------------------
 🚀 USO
@@ -84,7 +84,7 @@ python selos.py
 
 Ejecutar:
 
-python3 selos.py
+python3 SeloS.py
 
 El script solicitará:
 
