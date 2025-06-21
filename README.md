@@ -1,14 +1,14 @@
-============================================================
+========================================
                SeloS DoS Toolkit v1.0 - by DozerMx
-============================================================
+========================================
 
 ⚠️ USO LEGAL:
 Este script está diseñado EXCLUSIVAMENTE con fines educativos y pruebas en entornos controlados.
 NO LO UTILICES contra sistemas sin autorización expresa. Podrías incurrir en delitos informáticos.
 
-------------------------------------------------------------
+----------------------------------------
 🧠 DESCRIPCIÓN
-------------------------------------------------------------
+----------------------------------------
 SeloS es una herramienta de tráfico HTTP masivo construida con Python y aiohttp.
 Usa tareas asíncronas para lanzar miles de requests GET con headers aleatorios, útil para:
 - Pruebas de stress
@@ -17,9 +17,9 @@ Usa tareas asíncronas para lanzar miles de requests GET con headers aleatorios,
 
 Incluye rotación de rutas, useragents y cabeceras para evadir detección básica.
 
-------------------------------------------------------------
+----------------------------------------
 💻 INSTALACIÓN EN LINUX
-------------------------------------------------------------
+----------------------------------------
 
 1. Actualiza el sistema:
    sudo apt update && sudo apt upgrade -y
@@ -41,9 +41,9 @@ Incluye rotación de rutas, useragents y cabeceras para evadir detección básic
 6. Ejecuta el script:
    python3 SeloS.py
 
-------------------------------------------------------------
+----------------------------------------
 📱 INSTALACIÓN EN TERMUX (Android)
-------------------------------------------------------------
+----------------------------------------
 
 1. Actualiza paquetes:
    pkg update && pkg upgrade -y
@@ -61,9 +61,9 @@ Incluye rotación de rutas, useragents y cabeceras para evadir detección básic
 5. Ejecuta el script:
    python SeloS.py
 
-------------------------------------------------------------
+----------------------------------------
 🧰 USO
-------------------------------------------------------------
+----------------------------------------
 
 Al ejecutar, te pedirá:
 
@@ -75,24 +75,24 @@ Workers (100-10000) >> 1500
 
 Se mostrará el código de estado HTTP de cada request para medir respuesta del servidor.
 
-------------------------------------------------------------
+----------------------------------------
 📦 REQUISITOS (requirements.txt)
-------------------------------------------------------------
+----------------------------------------
 
 aiohttp==3.9.5
 pyfiglet==1.0.2
 
 Python >= 3.8 (recomendado 3.11+)
 
-------------------------------------------------------------
+----------------------------------------
 📌 CONSEJOS TÉCNICOS
-------------------------------------------------------------
+----------------------------------------
 
 - Ideal para analizar carga y stress en tu servidor.
 - No se recomienda usar más de 2000 workers si tu conexión o dispositivo es débil.
 - Compatible con Termux, WSL, Linux y cualquier sistema con Python 3.
 
-------------------------------------------------------------
+----------------------------------------
 📩 AUTOR Y CONTACTO
 ------------------------------------------------------------
 
