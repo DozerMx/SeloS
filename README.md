@@ -6,7 +6,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Status](https://img.shields.io/badge/status-educational-lightgrey?style=flat-square)
 
-> Herramienta educativa para simular tráfico HTTP masivo de forma asíncrona.
+> Herramienta educativa para DoS
+tráfico HTTP masivo de forma asíncrona.
 
 ------------------------------------------------------------
 📋 Tabla de Contenido
