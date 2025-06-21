@@ -1,6 +1,6 @@
-========================================
+==============================================================
                SeloS DoS Toolkit v1.0 - by DozerMx
-========================================
+==============================================================
 
 ⚠️ USO LEGAL:
 Este script está diseñado EXCLUSIVAMENTE con fines educativos y pruebas en entornos controlados.
