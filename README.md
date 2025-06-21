@@ -112,20 +112,6 @@ Press Ctrl+C to stop
 - Salida visual con colores ANSI y figlet.
 
 ------------------------------------------------------------
-🖼️ CAPTURAS (coloca en /assets/)
-------------------------------------------------------------
-
-- Banner inicial → assets/banner.png  
-- Diagrama HTTP Flood → assets/http_flood.png  
-- Capas OSI → assets/layers_attack.png  
-
-Markdown sugerido:
-
-![Banner](assets/banner.png)  
-![HTTP Flood](assets/http_flood.png)  
-![Capas de ataque](assets/layers_attack.png)
-
-------------------------------------------------------------
 ⚖️ ADVERTENCIA LEGAL
 ------------------------------------------------------------
 
