@@ -1,5 +1,5 @@
 ================
-                 🚀 SeloS DoS Toolkit v1.0 - by DozerMx
+SeloS DoS Toolkit v1.0 - by DozerMx
 ================
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue?style=flat-square&logo=python)
@@ -10,7 +10,7 @@
 tráfico HTTP masivo de forma asíncrona.
 
 ------------------------------------------------------------
-📋 Tabla de Contenido
+Tabla de Contenido
 ------------------------------------------------------------
 
 1. Descripción
@@ -26,13 +26,13 @@ tráfico HTTP masivo de forma asíncrona.
 9. Disclaimer
 
 ------------------------------------------------------------
-📌 DESCRIPCIÓN
+DESCRIPCIÓN
 ------------------------------------------------------------
 
 SeloS DoS Toolkit es un script Python para pruebas de stress HTTP, que envía peticiones masivas asíncronas usando aiohttp. Simula tráfico realista y variado con rotación de headers y rutas, ideal para pruebas de carga, pentesting local o análisis de WAFs.
 
 ------------------------------------------------------------
-🧰 REQUISITOS
+REQUISITOS
 ------------------------------------------------------------
 
 - Python 3.8 o superior (recomendado 3.11+)
@@ -47,10 +47,10 @@ aiohttp==3.9.5
 pyfiglet==1.0.2
 
 ------------------------------------------------------------
-⚙️ INSTALACIÓN
+INSTALACIÓN
 ------------------------------------------------------------
 
-🐧 LINUX
+LINUX
 
 1. Instalar dependencias:
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 python3 SeloS.py
 
-📱 TERMUX
+TERMUX
 
 pkg update && pkg upgrade -y  
 pkg install python git -y  
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 python SeloS.py
 
 ------------------------------------------------------------
-🚀 USO
+USO
 ------------------------------------------------------------
 
 Ejecutar:
@@ -101,7 +101,7 @@ ATTACK IN PROGRESS...
 Press Ctrl+C to stop
 
 ------------------------------------------------------------
-🔬 FUNCIONAMIENTO INTERNO
+FUNCIONAMIENTO INTERNO
 ------------------------------------------------------------
 
 - Usa asyncio para tareas concurrentes.
@@ -112,10 +112,10 @@ Press Ctrl+C to stop
 - Salida visual con colores ANSI y figlet.
 
 ------------------------------------------------------------
-⚖️ ADVERTENCIA LEGAL
+ADVERTENCIA LEGAL
 ------------------------------------------------------------
 
-> ⚠️ Este script es solo para uso educativo y pruebas controladas.
+> Este script es solo para uso educativo y pruebas controladas.
 > Ejecutarlo contra sistemas sin consentimiento es ILEGAL.
 > Úsalo únicamente en servidores propios o con permiso explícito.
 
