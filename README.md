@@ -1,6 +1,4 @@
-================
 SeloS DoS Toolkit v1.0 - by DozerMx
-================
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue?style=flat-square&logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -120,7 +118,7 @@ ADVERTENCIA LEGAL
 > Úsalo únicamente en servidores propios o con permiso explícito.
 
 ------------------------------------------------------------
-👤 AUTOR
+AUTOR
 ------------------------------------------------------------
 
 - Nombre: DozerMx  
@@ -129,7 +127,7 @@ ADVERTENCIA LEGAL
 - Licencia: MIT  
 
 ------------------------------------------------------------
-🛡️ DISCLAIMER
+DISCLAIMER
 ------------------------------------------------------------
 
 El autor NO se hace responsable por el uso malicioso o ilegal de esta herramienta.  
